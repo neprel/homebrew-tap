@@ -4,11 +4,11 @@ cask "git-a2a" do
 
   on_macos do
     on_intel do
-      sha256 "7bc17861a7b51800abb8296049d862abcf5ecab29b948ed38a400989ab54581c"
+      sha256 "44bd7089f313b0e7cc5370f395f989f74b3f8bc214f17582d54efbb5e0fe72ad"
       url "https://github.com/neprel/git-a2a/releases/download/v#{version}/git-a2a_brew_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "95e6ee027efaa4b31a26ade604bf845304919a4359ee1021dbdca9a71a6b4091"
+      sha256 "3621a31034e0980ea7101f423964e30ae5086a787e804f89f86ebb013c9dc1ee"
       url "https://github.com/neprel/git-a2a/releases/download/v#{version}/git-a2a_brew_#{version}_darwin_arm64.tar.gz"
     end
   end
