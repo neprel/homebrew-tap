@@ -1,16 +1,16 @@
 class GitA2a < Formula
   desc "Import git modules together with their owning agents"
   homepage "https://github.com/neprel/git-a2a"
-  version "1.0.0"
+  version "1.0.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/neprel/git-a2a/releases/download/v1.0.0/git-a2a_brew_1.0.0_darwin_arm64.tar.gz"
-      sha256 "3621a31034e0980ea7101f423964e30ae5086a787e804f89f86ebb013c9dc1ee"
+      url "https://github.com/neprel/git-a2a/releases/download/v1.0.1/git-a2a_brew_1.0.1_darwin_arm64.tar.gz"
+      sha256 "761a29e0cfb278fea14a55894ec687588c53b8573ec02eb98850305d10a8ccb4"
     else
-      url "https://github.com/neprel/git-a2a/releases/download/v1.0.0/git-a2a_brew_1.0.0_darwin_amd64.tar.gz"
-      sha256 "44bd7089f313b0e7cc5370f395f989f74b3f8bc214f17582d54efbb5e0fe72ad"
+      url "https://github.com/neprel/git-a2a/releases/download/v1.0.1/git-a2a_brew_1.0.1_darwin_amd64.tar.gz"
+      sha256 "5d3f23439e459e80b18316d1d311dce1b2f88fe3d0122656205b04d959fd2332"
     end
   end
 
@@ -20,6 +20,6 @@ class GitA2a < Formula
   end
 
   test do
-    assert_match "git-a2a 1.0.0", shell_output("#{bin}/git-a2a --version")
+    assert_match "git-a2a 1.0.1", shell_output("#{bin}/git-a2a --version")
   end
 end
