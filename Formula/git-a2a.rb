@@ -1,16 +1,16 @@
 class GitA2a < Formula
   desc "Import git modules together with their owning agents"
   homepage "https://github.com/neprel/git-a2a"
-  version "1.2.0-rc.1"
+  version "1.2.0-rc.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/neprel/git-a2a/releases/download/v1.2.0-rc.1/git-a2a_brew_1.2.0-rc.1_darwin_arm64.tar.gz"
-      sha256 "467df77e810059687528aaa4533e65614b3d570eaabf380a36e4e726447962f7"
+      url "https://github.com/neprel/git-a2a/releases/download/v1.2.0-rc.2/git-a2a_brew_1.2.0-rc.2_darwin_arm64.tar.gz"
+      sha256 "6e96d8b6c8545981b33f20ccfd8c7bf35cc139dbfd7bffc2278ade05f11e611b"
     else
-      url "https://github.com/neprel/git-a2a/releases/download/v1.2.0-rc.1/git-a2a_brew_1.2.0-rc.1_darwin_amd64.tar.gz"
-      sha256 "dd0f9dd51e297b46088b883f991d4b053901e9c2e4fc5bccf213147f52d26fcd"
+      url "https://github.com/neprel/git-a2a/releases/download/v1.2.0-rc.2/git-a2a_brew_1.2.0-rc.2_darwin_amd64.tar.gz"
+      sha256 "382383f453ee98eb3a56ae45d793d16aae2e57bd0884a09ab6cc6cfc05f033bf"
     end
   end
 
@@ -20,6 +20,6 @@ class GitA2a < Formula
   end
 
   test do
-    assert_match "git-a2a 1.2.0-rc.1", shell_output("#{bin}/git-a2a --version")
+    assert_match "git-a2a 1.2.0", shell_output("#{bin}/git-a2a --version")
   end
 end
