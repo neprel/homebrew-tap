@@ -1,16 +1,16 @@
 class GitA2a < Formula
   desc "Import git modules together with their owning agents"
   homepage "https://github.com/neprel/git-a2a"
-  version "1.3.0-rc.2"
+  version "1.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/neprel/git-a2a/releases/download/v1.3.0-rc.2/git-a2a_brew_1.3.0-rc.2_darwin_arm64.tar.gz"
-      sha256 "53844d73636923c6e36589270fb2fb90d00479e1e7bfa99b418ea8ac266bd6ee"
+      url "https://github.com/neprel/git-a2a/releases/download/v1.3.0/git-a2a_brew_1.3.0_darwin_arm64.tar.gz"
+      sha256 "254d654dd6dc2bce2cb3133651c5394bb93e311439563c7fbe1ddec9c4363e46"
     else
-      url "https://github.com/neprel/git-a2a/releases/download/v1.3.0-rc.2/git-a2a_brew_1.3.0-rc.2_darwin_amd64.tar.gz"
-      sha256 "43bb26009283f81a7f69f90a65f8c01ec4afcb60024586a141cac03ad97a7a72"
+      url "https://github.com/neprel/git-a2a/releases/download/v1.3.0/git-a2a_brew_1.3.0_darwin_amd64.tar.gz"
+      sha256 "b6a4525e8d978c1e66018163bb00aef4b2890516f8cf658c95c46ff471faed42"
     end
   end
 
