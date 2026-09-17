@@ -2,7 +2,7 @@ class GitA2a < Formula
   desc "Manage Git component dependencies with their responsible agents"
   homepage "https://github.com/neprel/git-a2a"
   version "2.0.0"
-  license "Apache-2.0"
+  license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
