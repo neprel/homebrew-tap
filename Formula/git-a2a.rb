@@ -1,16 +1,16 @@
 class GitA2a < Formula
   desc "Manage Git component dependencies with their responsible agents"
   homepage "https://github.com/neprel/git-a2a"
-  version "2.1.0"
+  version "2.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/neprel/git-a2a/releases/download/v2.1.0/git-a2a_brew_2.1.0_darwin_arm64.tar.gz"
-      sha256 "48840ea02e60ac79079d84b2e18a23aecedde74d75194a6de8f322c951eacac0"
+      url "https://github.com/neprel/git-a2a/releases/download/v2.1.1/git-a2a_brew_2.1.1_darwin_arm64.tar.gz"
+      sha256 "1c1ce25aff6b3d793bbde0eaf7b6de4b166f8dd723b337809f4da36c9b0c2fd1"
     else
-      url "https://github.com/neprel/git-a2a/releases/download/v2.1.0/git-a2a_brew_2.1.0_darwin_amd64.tar.gz"
-      sha256 "a5ce819b9d1fbcd1c7b0856cbad84d2ad5c045678fbb6da54a2801a9bb2a0a3d"
+      url "https://github.com/neprel/git-a2a/releases/download/v2.1.1/git-a2a_brew_2.1.1_darwin_amd64.tar.gz"
+      sha256 "24ae433f6de50305152b820bfc9bfd96f51f0a7f717d5c4ae61dd4c95044cf20"
     end
   end
 
@@ -20,6 +20,6 @@ class GitA2a < Formula
   end
 
   test do
-    assert_match "git-a2a 2.1.0", shell_output("#{bin}/git-a2a --version")
+    assert_match "git-a2a 2.1.1", shell_output("#{bin}/git-a2a --version")
   end
 end
